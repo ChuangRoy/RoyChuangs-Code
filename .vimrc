@@ -15,10 +15,12 @@ set noshowmode
 set showcmd
 set guioptions=
 set guifont=YaHei\ Consolas\ Hybrid:h14
+set listchars=space:·
+set hlsearch
 
 call plug#begin()
 Plug 'Lokaltog/vim-powerline' 
-Plug 'nathanaelkane/vim-indent-guides'
+Plug 'thaerkh/vim-indentguides'
 Plug 'preservim/nerdtree'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'kien/ctrlp.vim'
@@ -54,6 +56,9 @@ let g:ctrlp_custom_ignore = {
   \ }
 
 let g:ctrlp_user_command = 'find %s -type f'        " MacOSX/Linux
+let g:indentguides_spacechar = '┆'
+let g:indentguides_tabchar = '|'
+
 
 " popup
 nmap <Leader>t <Plug>(coc-translator-p)
