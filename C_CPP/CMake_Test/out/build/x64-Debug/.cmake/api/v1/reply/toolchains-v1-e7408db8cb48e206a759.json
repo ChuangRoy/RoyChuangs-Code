@@ -1,0 +1,123 @@
+{
+	"kind" : "toolchains",
+	"toolchains" : 
+	[
+		{
+			"compiler" : 
+			{
+				"id" : "GNU",
+				"implicit" : 
+				{
+					"includeDirectories" : 
+					[
+						"/usr/lib/gcc/x86_64-pc-msys/11.3.0/include",
+						"/usr/lib/gcc/x86_64-pc-msys/11.3.0/include-fixed",
+						"/usr/include",
+						"/usr/include/w32api"
+					],
+					"linkDirectories" : 
+					[
+						"/usr/lib/gcc/x86_64-pc-msys/11.3.0",
+						"/usr/x86_64-pc-msys/lib",
+						"/usr/lib"
+					],
+					"linkFrameworkDirectories" : [],
+					"linkLibraries" : 
+					[
+						"gcc_s",
+						"gcc",
+						"msys-2.0",
+						"advapi32",
+						"shell32",
+						"user32",
+						"kernel32",
+						"gcc_s",
+						"gcc"
+					]
+				},
+				"path" : "C:/msys64/usr/bin/cc.exe",
+				"version" : "11.3.0"
+			},
+			"language" : "C",
+			"sourceFileExtensions" : 
+			[
+				"c",
+				"m"
+			]
+		},
+		{
+			"compiler" : 
+			{
+				"id" : "GNU",
+				"implicit" : 
+				{
+					"includeDirectories" : 
+					[
+						"/usr/lib/gcc/x86_64-pc-msys/11.3.0/include/c++",
+						"/usr/lib/gcc/x86_64-pc-msys/11.3.0/include/c++/x86_64-pc-msys",
+						"/usr/lib/gcc/x86_64-pc-msys/11.3.0/include/c++/backward",
+						"/usr/lib/gcc/x86_64-pc-msys/11.3.0/include",
+						"/usr/lib/gcc/x86_64-pc-msys/11.3.0/include-fixed",
+						"/usr/include",
+						"/usr/include/w32api"
+					],
+					"linkDirectories" : 
+					[
+						"/usr/lib/gcc/x86_64-pc-msys/11.3.0",
+						"/usr/x86_64-pc-msys/lib",
+						"/usr/lib"
+					],
+					"linkFrameworkDirectories" : [],
+					"linkLibraries" : 
+					[
+						"stdc++",
+						"gcc_s",
+						"gcc",
+						"msys-2.0",
+						"advapi32",
+						"shell32",
+						"user32",
+						"kernel32",
+						"gcc_s",
+						"gcc"
+					]
+				},
+				"path" : "C:/msys64/usr/bin/c++.exe",
+				"version" : "11.3.0"
+			},
+			"language" : "CXX",
+			"sourceFileExtensions" : 
+			[
+				"C",
+				"M",
+				"c++",
+				"cc",
+				"cpp",
+				"cxx",
+				"mm",
+				"mpp",
+				"CPP",
+				"ixx",
+				"cppm"
+			]
+		},
+		{
+			"compiler" : 
+			{
+				"implicit" : {},
+				"path" : "C:/msys64/usr/bin/windres.exe"
+			},
+			"language" : "RC",
+			"sourceFileExtensions" : 
+			[
+				"rc",
+				"RC"
+			]
+		}
+	],
+	"version" : 
+	{
+		"major" : 1,
+		"minor" : 0
+	}
+}

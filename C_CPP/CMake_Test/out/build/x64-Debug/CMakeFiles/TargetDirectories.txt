@@ -1,0 +1,3 @@
+C:/msys64/home/s0415/Codes/C_CPP/CMake_Test/out/build/x64-Debug/CMakeFiles/CMake_Test.dir
+C:/msys64/home/s0415/Codes/C_CPP/CMake_Test/out/build/x64-Debug/CMakeFiles/edit_cache.dir
+C:/msys64/home/s0415/Codes/C_CPP/CMake_Test/out/build/x64-Debug/CMakeFiles/rebuild_cache.dir
