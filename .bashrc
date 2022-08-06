@@ -195,7 +195,7 @@ export CPATH="${CPATH:+${CPATH}:}/usr/lib/gcc/x86_64-pc-msys/11.3.0/include:/usr
 export CPLUS_INCLUDE_PATH="${CPLUS_INCLUDE_PATH:+${CPLUS_INCLUDE_PATH}:}/usr/lib/gcc/x86_64-pc-msys/11.3.0/include/c++"
 
 alias ls="ls --color"
-alias npp="C:/Program\ Files/Notepad++/notepad++.exe"
+alias npp="start \"\" C:/Program\ Files/Notepad++/notepad++.exe"
 
 export CLICOLOR=1
 # Change to your name, do not delete backslashes
