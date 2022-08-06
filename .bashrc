@@ -199,7 +199,7 @@ alias npp="start \"\" C:/Program\ Files/Notepad++/notepad++.exe"
 
 export CLICOLOR=1
 # Change to your name, do not delete backslashes
-export PS1="RoyChuang\[\e[31m\] \[\e[m\]\[\e[31m\]:\[\e[m\]\[\e[31m\]:\[\e[m\] \[\e[32m\]\w\[\e[m\] \n\[\e[34m\]»\[\e[m\] "
+export PS1="RoyChuang\[\e[31m\] \[\e[m\]\[\e[31m\]:\[\e[m\]\[\e[31m\]:\[\e[m\] \[\e[32m\]\w\[\e[m\] \n\[\e[36m\]»\[\e[m\] "
 
 export LSCOLORS=cxgxfxexbxegedabagacad
 
