@@ -29,7 +29,7 @@ class Window():
         # 設定輸入框
         self.input_url = tk.StringVar()  # 取得輸入的網址
         self.input_et = tk.Entry(self.input_frm, textvariable=self.input_url, width=60)
-        self.input_et.place(rely=0.75, relx=0.5, anchor='center')
+        self.input_et.place(eely=0.75, relx=0.5, anchor='center')
         # 設定按鈕
         self.btn = tk.Button(self.input_frm, text='Download', command=self.click,
                         bg='orange', fg='Black')
