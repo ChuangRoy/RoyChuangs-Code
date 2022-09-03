@@ -1,6 +1,9 @@
 clear
-
 cd C:\msys64\home\s0415
+Remove-Variable -Force HOME
+Set-Variable HOME "C:\msys64\home\s0415"
+Set-alias -n "npp" "C:\Program Files\Notepad++\notepad++.exe"
+
 $BASH = 1
 
 Set-alias -n "npp" "C:\Users\s0415\AppData\Local\Programs\npp\notepad++.exe"
