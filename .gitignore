@@ -41,3 +41,6 @@
 
 # swp files
 *.swp
+
+# backup files
+*.bak
