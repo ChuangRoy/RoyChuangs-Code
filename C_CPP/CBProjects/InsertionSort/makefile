@@ -1,3 +1,4 @@
 all:
 	g++ InsertionSort.cpp -ansi -pedantic -g -o InsertionSort 
-	./InsertionSort
+	# ./InsertionSort
+	gdb ./InsertionSort
