@@ -5,9 +5,7 @@ using namespace std;
 
 
 int main () {
-    clock_t start_time, end_time; // 儲存時間用的變數
-    start_time = clock(); // 計算開始時間
-    int list_length = 100000;
+    int list_length = 1000;
     int l[list_length] = {60, 50, 44, 82, 55};
     srand (time(NULL));
     for (int i = 0; i < list_length; i++) {
@@ -28,9 +26,4 @@ int main () {
     for (int i = 0; i < list_length; i++)
         cout << l[i] << endl;
     cout << endl;
-    
-    end_time = clock(); // 計算結束時間
-    double cpu_time_used = ((double) (end_time - start_time)) / CLOCKS_PER_SEC; // 計算實際花費時間
-
-    cout << "calculation time:" << cpu_time_used <<endl;
 }
