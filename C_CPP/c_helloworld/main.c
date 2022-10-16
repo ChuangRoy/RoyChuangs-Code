@@ -4,5 +4,6 @@
 int main () {
     printf("Hello World ! \n");
     printf("Press Enter to continue ...");
+    fflush(stdin);
     getchar();
 }
