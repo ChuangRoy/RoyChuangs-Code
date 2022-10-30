@@ -1,2 +1,2 @@
 @echo off
-start "" "powershell" %~dp0/vim/vim.exe %1
+start "" "powershell" %~dp0/vim.exe %1
