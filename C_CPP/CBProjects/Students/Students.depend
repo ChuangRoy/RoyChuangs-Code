@@ -2,3 +2,10 @@
 1664961468 source:e:\cbprojects\students\main.cpp
 	<iostream>
 
+1667734303 source:c:\users\s0415\codes\c_cpp\cbprojects\students\main.cpp
+	<iostream>
+	<cstdio>
+	<cstdlib>
+	<ctime>
+	<conio.h>
+

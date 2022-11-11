@@ -1,3 +1,3 @@
 all:
-	g++ main.cpp -o ./bin/Debug/Students.exe
-	gdb ./bin/Debug/Students.exe
+	g++ main.cpp -g -o Students.exe
+	gdb Students.exe
