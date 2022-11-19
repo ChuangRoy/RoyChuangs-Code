@@ -31,6 +31,11 @@ $env:VIRTUAL_ENV = $VIRTUAL_ENV
 
 New-Variable -Scope global -Name _OLD_VIRTUAL_PATH -Value $env:PATH
 
+function global:prompt
+    {
+    "$([char]27)[0mRoyChuang $([char]27)[31m" + "::" + "$([char]27)[32m $((Get-Location).Path)$([char]27)[34m" + "`n>> $([char]27)[0m"
+    }
+
 $env:PATH = "$env:VIRTUAL_ENV/bin;" + $env:PATH
 if (!$env:VIRTUAL_ENV_DISABLE_PROMPT) {
     function global:_old_virtual_prompt {
@@ -38,10 +43,7 @@ if (!$env:VIRTUAL_ENV_DISABLE_PROMPT) {
     }
     $function:_old_virtual_prompt = $function:prompt
 
-    function global:prompt
-    {
-    "$([char]27)[0mRoyChuang $([char]27)[31m" + "::" + "$([char]27)[32m $((Get-Location).Path)$([char]27)[34m" + "`n>> $([char]27)[0m"
-    }
+    
 
     if ("" -ne "") {
         function global:prompt {
