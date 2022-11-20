@@ -1,3 +1,3 @@
 all:
-	g++ main.cpp -g -o Students.exe
-	gdb Students.exe
+	g++ main.cpp -g -o Students.out
+	./Students.out

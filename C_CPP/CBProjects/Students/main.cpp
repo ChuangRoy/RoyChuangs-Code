@@ -2,7 +2,7 @@
 #include <cstdio>
 #include <cstdlib>
 #include <ctime>
-#include <conio.h>
+// #include <conio.h>
 
 using namespace std;
 
@@ -45,7 +45,7 @@ int main()
             else
                 increase = 1;
         }
-        cout << "(1:Chinese|2:Math|3:History|4:Science \n\t\t5:English|6:Average|Other:Number|Same key twice:toggle increase or decrease|q or esc:quit)" << endl;
+        cout << "(1:Chinese|2:Math|3:History|4:Science \n\t\t5:English|6:Average|Other:Number|Same key twice:toggle increase or decrease|ctrl + c:quit)" << endl;
         cout << " Number";
         if (rank)
             cout << "\tRanking";
@@ -142,10 +142,10 @@ int main()
             cout << endl;
         }
         fflush(stdin);
+        cout << fflush << "\b";
         last_ranking_target = ranking_target;
-        ranking_target = getch();
-        if (ranking_target == 'q' || ranking_target == 27)
-            break;
+        // ranking_target = getch();
+        cin >> ranking_target;
         if (system("CLS")) system("clear");
     }
     return 0;
