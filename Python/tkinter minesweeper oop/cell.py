@@ -42,7 +42,7 @@ class Cell:
             width = settings.CELL_WIDTH,
             height = settings.CELL_HEIGHT,
             text = f"Cells Left:{Cell.cell_cout}",
-            font=("Consolas", 30)
+            font=("Consolas", 20)
         )
         Cell.cell_count_label = label
         # return label

@@ -48,7 +48,7 @@ game_label = Label(
     fg = "white",
     bg = "black",
     text = "Minesweeper Game",
-    font = ("Consolas", 40)
+    font = ("Consolas", 20)
 )
 game_label.place(
     x = utils.width_prct(25),
