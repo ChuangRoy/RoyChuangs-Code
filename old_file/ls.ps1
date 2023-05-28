@@ -1,1 +1,0 @@
-C:\msys64\usr\bin\ls.exe --color $args
