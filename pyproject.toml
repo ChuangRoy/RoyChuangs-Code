@@ -2,7 +2,7 @@
 name = "repl_nix_Codes"
 version = "0.1.0"
 description = ""
-authors = ["Replit user <<>>"]
+authors = ["RoyChuang"]
 
 [tool.poetry.dependencies]
 python = "^3.8"
