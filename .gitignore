@@ -49,4 +49,4 @@
 *.replit
 *replit.nix
 *venv/
-.ccls-cache/
+*.ccls-cache/
