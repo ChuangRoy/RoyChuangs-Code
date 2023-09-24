@@ -45,8 +45,5 @@
 # backup files
 *.bak
 
-# replit files
-*.replit
-*replit.nix
 *venv/
 *.ccls-cache/
