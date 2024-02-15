@@ -1,4 +1,6 @@
 #include <iostream>
+#include <queue>
+#include <stack>
 using namespace std;
 
 int main () {
@@ -15,21 +17,37 @@ int main () {
                 a.push(temp);
             }
             ///////
-            stack<int> A_way, Stat, B_way;
-            bool ac = 1;
-            for (int i = N; i > 0; i++) {
+            stack<int> A_way, Station;
+            bool ok = 1;
+            int target;
+            for (int i = N; i > 0; i--) {
                 A_way.push(i);
             }
-            while ( (!A_way.empty()) && (ac)) {
-                temp = a.pop();
-                if (temp > A_way.top()) {
-                    while (temp > A_way.top)
+            while (!a.empty() && ok) {
+                target = a.front();
+                a.pop();
+                if (!A_way.empty() && A_way.top() <= target) {
+                    while (A_way.top() < target) {
+                        Station.push(A_way.top());
+                        A_way.pop();
+                    }
+                    A_way.pop();
+                }else if (!Station.empty() && Station.top() == target){
+                    Station.pop();
+                }else{
+                    ok  = 0;
+                    break;
                 }
+            }
+            if (ok) {
+                cout << "Yes"  << endl;
+            }else{
+                cout << "No" << endl;
             }
             ///////
             cin >> M;
         }
         cin >> N;
     }
-    
+    return 0;
 }
