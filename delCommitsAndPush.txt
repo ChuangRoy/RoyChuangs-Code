@@ -1,0 +1,6 @@
+git checkout --orphan latest_branch
+git add -A
+git commit -am "19:12 12/9/2024"
+git branch -D master
+git branch -m master
+git push -f -u origin master
