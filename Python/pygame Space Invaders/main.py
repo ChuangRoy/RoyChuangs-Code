@@ -65,7 +65,7 @@ class Ship (object):
         self.lasers  =  []
         self.cool_down_counter = 0
 
-    def draw (self, window):  # can't work in this oject because ship img  and lasers are none
+    def draw (self, window):  # can't work in this oject because ship img and lasers are none
         window.blit(self.ship_img, (self.x, self.y))
         for laser in self.lasers:
             laser.draw(window)
