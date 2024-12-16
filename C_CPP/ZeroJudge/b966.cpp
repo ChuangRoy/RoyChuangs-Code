@@ -2,7 +2,7 @@
 using namespace std;
 
 const int N = 1e7 + 1;
-int arr [N] = {0};
+short arr[N] = {0};
 
 int main () {
     int k;
