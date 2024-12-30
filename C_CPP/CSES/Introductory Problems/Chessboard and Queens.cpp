@@ -27,12 +27,12 @@ int main () {
 		cin >> s;
 		column [i] = 0;
 		for (int j = 0; j < n; j++) {
-		    diag1[i+j] = 0;
+			diag1[i+j] = 0;
             diag2[i-j+n-1] = 0;
             if (s[j] == '*')
-		        chessboard[i][j] = 1;
-		    else
-		        chessboard[i][j] = 0;
+				chessboard[i][j] = 1;
+			else
+				chessboard[i][j] = 0;
 		}
 	}
 	search(0);

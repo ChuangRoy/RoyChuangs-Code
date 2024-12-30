@@ -10,7 +10,7 @@ int main () {
 	int i = n;
 	while (i--)
 		cin >> a[n-i-1];
-	vector <int> base;
+	vector<int> base;
 	base.push_back(a[0]);
 	bool err;
 	for (i = 1; i < n; i++) {
