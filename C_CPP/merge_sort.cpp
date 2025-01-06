@@ -5,7 +5,7 @@ const int N = 1e6;
 vector<long long> a(N, -1);
 vector<long long> record(N, -1);
 
-void sort(int l, int r) {
+void merge_sort(int l, int r) {
     if (l == r) return;
     int mid = (l + r) / 2;
     sort(l, mid);
@@ -45,7 +45,7 @@ int main () {
     const int n = 5;
     int arr[n] = {1, 3, 7, 0, 4};
     for (int i = 0; i < n; i++) a[i] = arr[i];
-    sort(0, n-1);
+    merge_sort(0, n-1);
     for (int i = 0; i < n; i++) cout << a[i] << endl;
     return 0;
 }
