@@ -1,4 +1,4 @@
-// @auther:cjtsai
+// auther:cjtsai
 #include <bits/stdc++.h>
 using namespace std;
 
