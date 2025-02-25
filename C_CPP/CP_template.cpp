@@ -21,8 +21,7 @@ template<class I> void print(I a, I b) { while(a < b) cerr << *a << " \n"[next(a
 #endif
 /* End of Debug */
 
-int main ()
-{
+int main () {
     AC
     
     return 0;
