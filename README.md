@@ -1,3 +1,3 @@
 # RoyChuang's Code Repo
 
-My Noob's journey
+A Noob's journey
