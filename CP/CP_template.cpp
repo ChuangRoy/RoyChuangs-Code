@@ -1,14 +1,17 @@
 #pragma GCC optimize("Ofast")
-
-#include <bits/stdc++.h>
+#include <iostream>
+#include <utility>
+#define AC ios_base::sync_with_stdio(false); std::cin.tie(nullptr); std::cout.tie(nullptr);
+#define pb emplace_back
+#define ALL(x) begin(x),end(x)
+#define MP(x) make_pair((x), (x))
+#define SQ(x) ((x)*(x))
+#define SZ(x) ((int) x.size())
 
 using namespace std;
 typedef long long ll;
 typedef pair<int, int> pii;
 
-#define AC ios_base::sync_with_stdio(false); std::cin.tie(nullptr); std::cout.tie(nullptr);
-#define ALL(x) begin(x),end(x)
-#define pb emplace_back
 /* Debug */
 #ifdef LOCAL
 #define debug(args...) LKJ("[ " #args " ]", args)
@@ -21,8 +24,14 @@ template<class I> void print(I a, I b) { while(a < b) cerr << *a << " \n"[next(a
 #endif
 /* End of Debug */
 
+void solve () {
+    
+}
+
 int main () {
     AC
-    
+    int T; cin >> T;
+    while (T--)
+        solve();
     return 0;
 }
