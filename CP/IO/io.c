@@ -53,3 +53,8 @@ int main() {
     write(1, vi, p3);
     return 0;
 }
+
+/*
+inline unsigned in() {unsigned re = 0; char c = GU; while (c == ' ' || c == '\n') {c = GU;} while (c >= '0' && c <= '9') {re = (re << 3) + (re << 1) + (c ^ '0'), c = GU;} return re;}
+inline void out(unsigned x) {char str[T_SIZE]; int p = 0; do {str[p++] = '0' ^ (x % 10); x /= 10;} while (x); for (--p; p >= 0; p--) {vi[p3++] = str[p];}}
+*/

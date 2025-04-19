@@ -1,6 +1,5 @@
 #pragma GCC optimize("Ofast")
 #include <iostream>
-#include <utility>
 #include <vector>
 #include <algorithm>
 #include <climits>
@@ -8,13 +7,10 @@
 #define AC ios_base::sync_with_stdio(false); std::cin.tie(nullptr); std::cout.tie(nullptr);
 #define pb emplace_back
 #define ALL(x) x.begin(),x.end()
-#define MP(x) make_pair((x), (x))
 #define SQ(x) ((x)*(x))
 #define SZ(x) ((int) x.size())
 
 using namespace std;
-typedef long long ll;
-typedef pair<int, int> pii;
 
 const long long INF = LLONG_MAX;
 
@@ -36,7 +32,7 @@ long long getDisSq (int start, int end) {
     int mid = (start + end) >> 1;
     long long centerX = dots[mid].x;
     long long d = min(getDisSq(start, mid), getDisSq(mid+1, end));
-    long long dsqrt = sqrt(d);
+    long long dsqrt = ceil(sqrt(d));
     vector<dot> candidate;
     for (int i = start; i <= end; i++) {
         if (abs(dots[i].x - centerX) >= dsqrt) continue;

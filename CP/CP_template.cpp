@@ -4,7 +4,7 @@
 #define AC ios_base::sync_with_stdio(false); std::cin.tie(nullptr); std::cout.tie(nullptr);
 #define pb emplace_back
 #define ALL(x) begin(x),end(x)
-#define MP(x) make_pair((x), (x))
+#define MP(x, y) make_pair((x), (y))
 #define SQ(x) ((x)*(x))
 #define SZ(x) ((int) x.size())
 
