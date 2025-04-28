@@ -7,6 +7,7 @@
 #define MP(x, y) make_pair((x), (y))
 #define SQ(x) ((x)*(x))
 #define SZ(x) ((int) x.size())
+#define err(x) cerr << #x << ": " << x << endl;
 
 using namespace std;
 typedef long long ll;
