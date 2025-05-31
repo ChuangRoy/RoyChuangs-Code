@@ -7,18 +7,17 @@
 using namespace std;
 typedef long long ll;
 
-string pairRNA (string s) {
+void pairRNA (string &s) {
     for (int i = 0; i < 3; i++) {
         if (s[i] == 'A') s[i] = 'U';
         else if (s[i] == 'T') s[i] = 'A';
         else if (s[i] == 'C') s[i] = 'G';
         else if (s[i] == 'G') s[i] = 'C';
     }
-    return s;
 }
 
 string getAA (string s) {
-    s = pairRNA(s);
+    pairRNA(s);
     if (s == "AUG") return "Start";
     if (s == "UAA" || s == "UAG" || s == "UGA") return "Stop";
     if (s == "UUU" || s == "UUC") return "Phe";
@@ -40,16 +39,16 @@ string getAA (string s) {
 void solve () {
     string s;
     cin >> s;
-    bool start = 0;
+    bool started = 0;
     for (int i = 0; i < SZ(s); i += 3) {
         string AA = getAA(s.substr(i, 3));
-        if (AA == "Start") start = 1;
-        if (start) cout << AA;
+        if (AA == "Start") started = 1;
+        if (started) cout << AA;
         if (AA == "Stop") {
             cout << '\n';
             return;
         }
-        if (start && AA != "") cout << '-';
+        if (started && AA != "") cout << '-';
     }
 }
 
