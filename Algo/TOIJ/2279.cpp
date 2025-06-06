@@ -7,15 +7,11 @@
 #define SIZE (52099800)
 
 using namespace std;
-typedef long long ll;
-typedef pair<int, int> pii;
-
-#define AC ios_base::sync_with_stdio(false); std::cin.tie(nullptr); std::cout.tie(nullptr);
-#define pb emplace_back
 
 char *c, *k;
 
 int main () {
+    auto clk = clock();
     int n; cin >> n;
     k = new char[10585760];
     switch (n) {
@@ -66,7 +62,7 @@ int main () {
         cout << 8 << endl;
         break;
     case 9:
-        for (int i = 0; i < 437700; i++) cout << endl;
+        while (double (clock() - clk) / CLOCKS_PER_SEC < 0.996);
         cout << 9 << endl;
         break;
     }

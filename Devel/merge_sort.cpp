@@ -9,8 +9,8 @@ void merge_sort(int l, int r)
 {
     if (l == r) return;
     int mid = (l + r) / 2;
-    sort(l, mid);
-    sort(mid+1, r);
+    merge_sort(l, mid);
+    merge_sort(mid+1, r);
     // merge a b
     int la = l, lb = mid + 1, i = l;
     while (la <= mid && lb <= r) {
@@ -42,7 +42,7 @@ void merge_sort(int l, int r)
     for (int j = l; j <= r; j++) a[j] = record[j];
 }
 
-int main ()
+int main()
 {
     const int n = 5;
     int arr[n] = {1, 3, 7, 0, 4};
