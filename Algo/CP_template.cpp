@@ -16,7 +16,7 @@
 #define SZ(x) ((int) x.size())
 
 using namespace std;
-typedef long long ll;
+typedef long long int lli;
 
 template <typename A, typename B>
 ostream& operator << (ostream& o, pair<A, B> a) {
@@ -27,14 +27,12 @@ istream& operator >> (istream& o, pair<A, B> &a) {
     return o >> a.first >> a.second;
 }
 
-void solve () {
+void solve() {
     
 }
 
-int main () {
+int main() {
     fastio;
-    int T; cin >> T;
-    while (T--)
-        solve();
+    solve();
     return 0;
 }

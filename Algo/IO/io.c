@@ -3,38 +3,47 @@
 #include <unistd.h>
 
 #define BUF_SIZE 20000000
-#define T_SIZE 40
+#define num_length 10
 
-// Fast Input Macros
-#define GU (p1 == p2 && (p2 = (p1 = buf) + read(0, buf, BUF_SIZE), p1 == p2) ? -1 : *p1++)
-#define PU(x) (vi[p3++] = (x))
+#define fast_get_char (ptr_buf_start == ptr_buf_end && (ptr_buf_end = (ptr_buf_start = buf) + read(0, buf, BUF_SIZE), ptr_buf_start == ptr_buf_end) ? -1 : *ptr_buf_start++)
+#define fast_put_char(x) (vi[ptr_buf_out++] = (x))
 
-static char buf[BUF_SIZE], vi[BUF_SIZE], *p1 = buf, *p2 = buf;
-static int p3;
+static char buf[BUF_SIZE], vi[BUF_SIZE], *ptr_buf_start = buf, *ptr_buf_end = buf;
+static int ptr_buf_out;
 
-// Fast Input (Signed Integer)
-int in() {
+int readInt() {
     int re = 0, neg = 0;
-    char c = GU;
-    while (c == ' ' || c == '\n') c = GU; // Skip whitespace
+    char c = fast_get_char;
+    while (c == ' ' || c == '\n') c = fast_get_char;
 
-    if (c == '-') neg = 1, c = GU; // Check for negative sign
+    if (c == '-') neg = 1, c = fast_get_char;
 
     while (c >= '0' && c <= '9') {
         re = (re << 3) + (re << 1) + (c ^ '0'); 
-        c = GU;
+        c = fast_get_char;
     }
     return neg ? -re : re;
 }
 
-// Fast Output (Signed Integer)
-void out(int x) {
-    char str[T_SIZE];
+unsigned readUInt() {
+    int re = 0;
+    char c = fast_get_char;
+    while (c == ' ' || c == '\n') c = fast_get_char;
+
+    while (c >= '0' && c <= '9') {
+        re = (re << 3) + (re << 1) + (c ^ '0'); 
+        c = fast_get_char;
+    }
+    return re;
+}
+
+void outInt(int x) {
+    char str[num_length];
     int p = 0;
 
     if (x < 0) {
-        PU('-');
-        x = -x; // Convert to positive
+        fast_put_char('-');
+        x = -x;
     }
 
     do {
@@ -42,19 +51,27 @@ void out(int x) {
         x /= 10;
     } while (x);
 
-    while (p--) PU(str[p]);
-    PU('\n');
+    while (p--) fast_put_char(str[p]);
+    fast_put_char('\n');
+}
+
+void outUInt(unsigned x) {
+    char str[num_length];
+    int p = 0;
+
+    do {
+        str[p++] = '0' ^ (x % 10);
+        x /= 10;
+    } while (x);
+
+    while (p--) fast_put_char(str[p]);
+    fast_put_char('\n');
 }
 
 int main() {
-    int a = in();
-    int b = in();
-    out(a + b);  // Example usage: prints sum of two integers
-    write(1, vi, p3);
+    int a = readInt();
+    int b = readInt();
+    outInt(a + b);  // Example usage: prints sum of two integers
+    write(1, vi, ptr_buf_out);
     return 0;
 }
-
-/*
-inline unsigned in() {unsigned re = 0; char c = GU; while (c == ' ' || c == '\n') {c = GU;} while (c >= '0' && c <= '9') {re = (re << 3) + (re << 1) + (c ^ '0'), c = GU;} return re;}
-inline void out(unsigned x) {char str[T_SIZE]; int p = 0; do {str[p++] = '0' ^ (x % 10); x /= 10;} while (x); for (--p; p >= 0; p--) {vi[p3++] = str[p];}}
-*/
