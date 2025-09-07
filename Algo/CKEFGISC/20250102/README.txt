@@ -1,1 +1,0 @@
-https://hackmd.io/@keaucucal/2025club
