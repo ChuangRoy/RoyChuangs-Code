@@ -4,8 +4,8 @@ BasedOnStyle:  Google
 # AllowShortIfStatementsOnASingleLine: false
 # AllowShortLoopsOnASingleLine: false
 # ColumnLimit:    120
-IndentWidth:     4
-TabWidth:        4
+IndentWidth:     8
+TabWidth:        8
 UseTab:          Never
 # IndentCaseLabels: false
 # MaxEmptyLinesToKeep: 1
